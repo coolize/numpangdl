@@ -1,0 +1,259 @@
+﻿
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #444444;
+    background: #f8f8f8;
+    margin: 0;
+    padding-right: 0 !important;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-6 {
+    /* -ms-flex: 0 0 50%;
+            max-width: 50%;
+            position: relative;
+            padding-right: 15px;
+            padding-left: 15px;*/
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 70%;
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.d-flex {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+}
+
+.align-items-center {
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+}
+
+.justify-content-end {
+    -webkit-box-pack: end !important;
+    -ms-flex-pack: end !important;
+    justify-content: flex-end !important;
+}
+
+.justify-content-between {
+    -webkit-box-pack: justify !important;
+    -ms-flex-pack: justify !important;
+    justify-content: space-between !important;
+}
+
+
+.align-items-end {
+    -webkit-box-align: end !important;
+    -ms-flex-align: end !important;
+    align-items: flex-end !important;
+}
+
+main {
+    height: auto;
+    min-height: auto;
+    margin-bottom: 0;
+    padding-top: 0;
+}
+
+section.single-page {
+    width: 100%;
+    height: auto;
+    min-height: calc(100vh - 170px);
+    margin-bottom: 15px;
+    padding: 40px 0;
+    display: flex;
+}
+
+.panel-default {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* table */
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    border-collapse: collapse;
+}
+
+    .table thead th {
+        font-size: 14px;
+        font-weight: 600;
+        color: #444;
+        text-align: left;
+        padding: .75rem;
+        vertical-align: bottom;
+        border-bottom: 2px solid #dee2e6;
+    }
+
+    .table tbody td,
+    .table tfoot td {
+        font-size: 13px;
+        font-weight: 400;
+        color: #444;
+        padding: 15px 12px;
+        border-bottom: 1px solid #dee2e6;
+    }
+
+        .table tbody td:first-child {
+            font-weight: 600;
+            color: #444;
+        }
+
+        .table tbody td p.time-bar {
+            font-size: 12px;
+            color: #444;
+            margin-bottom: 0;
+        }
+
+            .table tbody td p.time-bar span {
+                font-weight: 600;
+                color: #DF4848;
+            }
+
+        .table tbody td:last-child .btn {
+            font-size: 13px;
+            margin-top: 5px;
+        }
+
+        .table tbody td:last-child p {
+            font-size: 12px;
+            color: #444;
+            margin-bottom: 0;
+        }
+
+    .table tfoot td {
+        font-size: 13px;
+        font-weight: 400;
+        color: #444;
+        padding: 15px 12px 0;
+        border: 0;
+    }
+
+    .table tfoot tr:last-child td {
+        padding-top: 40px;
+    }
+
+/* Label Sender */
+.label-sender .container::before {
+    display: block;
+    content: "";
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    /*border-left: 2px dashed #888;*/
+}
+
+.label-sender .panel-default .panel-body {
+    padding: 15px;
+}
+
+.label-sender hr {
+    margin: 1.3rem -15px;
+    border-bottom: 1px #707070 solid;
+}
+
+.label-sender p {
+    font-size: 15px;
+    color: #707070;
+}
+
+.info-route {
+    width: 100%;
+    color: #707070;
+}
+
+    .info-route h3 {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .info-route span {
+        display: block;
+        font-size: 14px;
+    }
+
+    .info-route p {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+
+        .info-route p b {
+            font-size: 12px;
+            font-weight: normal;
+        }
+
+.barcode {
+    width: 65%;
+    text-align: right;
+}
+
+    .barcode img {
+        width: 100%;
+    }
+
+.label-sender .location p {
+    width: 100%;
+    font-size: 15px;
+    color: #707070;
+    margin: 0;
+}
+
+    .label-sender .location p:first-child {
+        margin-right: 30px;
+    }
+
+    .label-sender .location p b {
+        font-weight: 500;
+    }
+
+.label-sender .table-custom thead th,
+.label-sender .table-custom tbody td {
+    border: 0;
+    font-size: 14px;
+    color: #707070;
+    padding: 5px;
+}
+
+.label-sender .table-custom thead th {
+    font-weight: normal;
+    border-bottom: 1px dashed #888;
+}
